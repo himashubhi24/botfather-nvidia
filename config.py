@@ -10,7 +10,7 @@ from logging.handlers import RotatingFileHandler
 
 
 #Bot token @Botfather
-TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "6524456100:AAGZwDioIpgENImhMEkuavtAYxOvZL5yFDE")
+TG_BOT_TOKEN = os.environ.get("TG_BOT_TOKEN", "7103425829:AAGCJn8hDSvDpQEzf8SvnKXozIspbAwFjec")
 
 #Your API ID from my.telegram.org
 APP_ID = int(os.environ.get("APP_ID", "29707337"))
@@ -25,7 +25,7 @@ CHANNEL_ID = int(os.environ.get("CHANNEL_ID", "-1002086919404"))
 OWNER_ID = int(os.environ.get("OWNER_ID", "6810248021"))
 
 #Port
-PORT = os.environ.get("PORT", "8098")
+PORT = os.environ.get("PORT", "8078")
 
 #Database 
 DB_URI = os.environ.get("DATABASE_URL", "mongodb+srv://niggroxx:Rath8004@tipu.atrjyqv.mongodb.net/?retryWrites=true&w=majority&appName=tipu")
@@ -39,7 +39,7 @@ TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 #start message
 START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\n you need to join @foxylinkk my channel.")
 try:
-    ADMINS=[7026164101]
+    ADMINS=[6810248021]
     for x in (os.environ.get("ADMINS", "").split()):
         ADMINS.append(int(x))
 except ValueError:
@@ -61,7 +61,7 @@ BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
 USER_REPLY_TEXT = "🚫 @foxylinkk!"
 
 ADMINS.append(OWNER_ID)
-ADMINS.append(7026164101)
+ADMINS.append(6810248021)
 
 LOG_FILE_NAME = "filesharingbot.txt"
 
