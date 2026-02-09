@@ -1,3 +1,4 @@
+
 #(©)CodeXBotz
 
 
@@ -37,7 +38,7 @@ FORCE_SUB_CHANNEL = int(os.environ.get("FORCE_SUB_CHANNEL", "-1001552661623"))
 TG_BOT_WORKERS = int(os.environ.get("TG_BOT_WORKERS", "4"))
 
 #start message
-START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\n you need to join @mahilalinks my channel.")
+START_MSG = os.environ.get("START_MESSAGE", "Hello {first}\n\n you need to join  my channel.")
 try:
     ADMINS=[6810248021]
     for x in (os.environ.get("ADMINS", "").split()):
@@ -46,7 +47,7 @@ except ValueError:
         raise Exception("Your Admins list does not contain valid integers.")
 
 #Force sub message 
-FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "👋 Hello {first}!\nPlease Join our channel @mahilalinks")
+FORCE_MSG = os.environ.get("FORCE_SUB_MESSAGE", "👋 Hello {first}!\nPlease Join our channel ")
 
 #set your Custom Caption here, Keep None for Disable Custom Caption
 CUSTOM_CAPTION = os.environ.get("@foxylinkk",)
@@ -58,7 +59,7 @@ PROTECT_CONTENT = True if os.environ.get('PROTECT_CONTENT', "True") == "True" el
 DISABLE_CHANNEL_BUTTON = os.environ.get("DISABLE_CHANNEL_BUTTON", None) == 'False'
 
 BOT_STATS_TEXT = "<b>BOT UPTIME</b>\n{uptime}"
-USER_REPLY_TEXT = "🚫 @mahilalinks!"
+USER_REPLY_TEXT = "🚫 !"
 
 ADMINS.append(OWNER_ID)
 ADMINS.append(6810248021)
